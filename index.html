@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Management App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="top">
+          <div class="title">
+            <img src="asset/logo.png" alt="BMA logo" class="logo" />
+            <h1><span>Book</span><br /><span>Management</span><br /><span>App</span></h1>
+            <button type="button" class="open-form">Add Book</button>
+            <img src="asset/books.png" alt="books" class="books" />
+          </div>
+          <form id="addBookForm">
+            <div class="form-part">
+              <label for="title">Title:</label>
+              <input type="text" id="title" name="title" placeholder="e.g. A Study in Scarlet" minlength="1" maxlength="16" autocomplete="off" />
+              <p class="max-title"></p>
+            </div>
+            <div class="form-part">
+              <label for="author">Author:</label>
+              <input type="text" id="author" name="author" placeholder="e.g. Arthur Conan Doyle" minlength="1" maxlength="16" autocomplete="off" />
+              <p class="max-author"></p>
+            </div>
+            <div class="form-part">
+              <label for="year">Year:</label>
+              <input type="number" id="year" name="year" placeholder="e.g. 1887" pattern="\d*" maxlength="4" min="1" max="2022" />
+              <p class="max-year"></p>
+            </div>
+            <div class="form-part">
+              <label for="genre">Genre:</label>
+              <select name="genre" id="genre">
+                <option value="romance">Romance</option>
+                <option value="crime">Crime</option>
+                <option value="health">Health</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-part">
+              <label for="status">Status:</label>
+              <select name="status" id="status">
+                <option value="false">In-progress</option>
+                <option value="true">Completed</option>
+              </select>
+            </div>
+            <input type="submit" class="submit" disabled />
+          </form>
+        </div>
+        <div class="bottom">
+          <div class="form-toggle">
+            <img src="asset/overlay-arrow.svg" alt="arrow" />
+          </div>
+          <input type="text" name="search" id="search" class="search-bar" placeholder="Search Book" minlength="1" maxlength="16" autocomplete="off" />
+          <div class="book-status">
+            <div class="in-progress">In-progress</div>
+            <div class="completed">Completed</div>
+          </div>
+          <div class="in-progress-books"></div>
+          <div class="completed-books"></div>
+          <footer>
+            <p>Made with ❤ by Virto Hardiman</p>
+            <img src="asset/line.png" />
+            <p>
+              Sources: <a href="https://craftwork.design/downloads/flow-lava-constructor/" target="_blank">Illustration art</a>, <a href="https://github.com/WordPress/dashicons" target="_blank">Arrow icon</a>,
+              <a href="https://github.com/icons8/line-awesome" target="_blank">Redo icon</a>,<br /><a href="https://github.com/ant-design/ant-design-icons" target="_blank">Check icon</a>,<a
+                href="https://github.com/artcoholic/akar-icons"
+                target="_blank"
+                >Cross icon</a
+              >,<a href="https://github.com/ant-design/ant-design-icons" target="_blank">Search icon</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <div class="dim"></div>
+    <!-- <div class="pop-up">
+      <p>Data successfully updated</p>
+    </div> -->
+
+    <script src="storage-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

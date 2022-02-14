@@ -1,6 +1,6 @@
 ![Project Cover](https://i.imgur.com/3RVvPLo.png)
 
-**Demo link**: [https://virtohardiman.github.io/bookshelf-app/](https://virtohardiman.github.io/dicoding-bookshelf-app/)
+**Demo link**: [https://virtohardiman.github.io/dicoding-bookshelf-app/](https://virtohardiman.github.io/dicoding-bookshelf-app/)
 
 **Project name**: Bookshelf app
 
